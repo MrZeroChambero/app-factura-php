@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #455a64;
+}
+
+.cont-menu{
+    width: 400px;
+    margin: 50px auto;
+}
+
+.cont-menu .cont-enlace{
+    box-shadow: 0px 0px 2px 1px white;
+}
+
+/* Estilos para las opciones */
+.cont-menu .cont-enlace .opcion{
+    display: flex;
+    justify-content: space-between;
+    background-color: #009688;
+    color: white;
+    padding: 13px 15px;
+    font-size: 22px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Estilos para el símbolo '+' */
+.cont-menu .cont-enlace .opcion .icono{
+    background-color: white;
+    color: #009688;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    width: 26px;
+    border-radius: 5px;
+}
+
+/* Efecto para aparacer y desaparecer enlaces */
+.cont-menu .cont-enlace .enlace{
+    height: 0;
+    overflow: hidden;
+}
+
+.cont-menu .cont-enlace .animation{
+    height: 100%;
+}
+
+/* Estilos para los enlaces */
+.cont-menu .cont-enlace .enlace a{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(0,0,0,.8);
+    background-color: white;
+}
+
+.cont-menu .cont-enlace .enlace a:hover{
+    background-color: #1a567e;
+    color: white;
+}

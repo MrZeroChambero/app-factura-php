@@ -1,0 +1,33 @@
+Options All -Indexes
+Options -MultiViews
+Options +FollowSymLinks
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+#RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
+RewriteRule ./index.php [L]
+
+
+#RewriteEngine On
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ./index.php [L]
+
+<files .htaccess>
+order allow,deny
+deny from all
+satisfy all
+</files>
+
+<files funciones_generales.php>
+order allow,deny
+deny from all
+satisfy all
+</files>
+<files menus.php>
+order allow,deny
+deny from all
+satisfy all
+</files>

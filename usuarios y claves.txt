@@ -1,0 +1,11 @@
+administrador
+usuario:helin
+clave:admin
+
+gerente:
+usuario:lanene1972
+clave:gerente
+
+trabajador:
+usuario:trabajador
+clave:trabajador
