@@ -15,7 +15,7 @@ patucasa();
 
 
     $db_host = 'localhost'; //Host del Servidor MySQL
-    $name = 'facturacion'; //Nombre de la Base de datos
+    $name = 'facturacionphp'; //Nombre de la Base de datos
     $user = 'root'; //Usuario de MySQL
     $pass = ''; //Password de Usuario MySQL
 //$sql_file='db_backup.sql';

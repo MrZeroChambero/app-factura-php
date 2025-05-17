@@ -49,7 +49,10 @@ function restoreDatabaseTables($dbHost, $dbUsername, $dbPassword, $dbName, $file
         if (substr(trim($line), -1, 1) == ';'){
             // Perform the query
             if(!$db->query($templine)){
-                $error .= 'Error performing query "<b>' . $templine . '</b>": ' . $db->error . '<br /><br />';
+                // Ignorar error de tabla existente
+                if (strpos($db->error, 'already exists') === false) {
+                    $error .= 'Error performing query "<b>' . $templine . '</b>": ' . $db->error . '<br /><br />';
+                }
             }
             
             // Reset temp variable to empty
@@ -62,7 +65,7 @@ function restoreDatabaseTables($dbHost, $dbUsername, $dbPassword, $dbName, $file
 $dbHost='localhost';
 $dbUsername='root';
 $dbPassword='';
-$dbName="facturacion";
+$dbName="facturacionphp";
 
 $filePath="C:\\xampp\\htdocs\\facturacion\\respaldo\\respaldos\\".$respaldo_name;
 if (!(file_exists($filePath))) {
