@@ -1,24 +1,23 @@
-<script>var url=window.location.href; var dir="http://localhost/facturacion/index.php?pagina=cambio_clave"; if(url!=dir){setTimeout(function(){window.location.replace('http://localhost/facturacion/salir.php')},0); /*alert("url"+url+"dir"+dir);*/}</script>
 <?php 
 require_once($_SERVER['DOCUMENT_ROOT'].'/facturacion/conexion/conexion.php');
 require_once($_SERVER['DOCUMENT_ROOT'].'/facturacion/funciones_generales.php');
 if (isset($_SESSION['autenticado']) && $_SESSION['autenticado'] == true) {
    $_SESSION['usuario_clave']=null;
 
-   echo"<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=login')},0);</script>"; 
+   echo"<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=login')},0);</script>"; 
 
    exit();     
 }
 
 if (isset($_SESSION['bloqueo_preguntas']) and $_SESSION['bloqueo_preguntas'] == true) {
-   echo"<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=login')},0);</script>";
+   echo"<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=login')},0);</script>";
 
    exit();  
 }
 if (!isset($_SESSION['verificar_respuesta'])) {
    $_SESSION['usuario_clave']=null;
 
-   echo"<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=login')},0);</script>"; 
+   echo"<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=login')},0);</script>"; 
 
    exit();   
 }
@@ -26,7 +25,7 @@ if (!isset($_SESSION['verificar_respuesta'])) {
 if (empty(trim($_SESSION['verificar_respuesta']))) {
     $_SESSION['usuario_clave']=null;
 
-   echo"<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=login')},0);</script>"; 
+   echo"<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=login')},0);</script>"; 
 
    exit();      
 }
@@ -34,7 +33,7 @@ if (empty(trim($_SESSION['verificar_respuesta']))) {
 if ($_SESSION['verificar_respuesta']!==true) {
      $_SESSION['usuario_clave']=null;
 
-   echo"<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=login')},0);</script>"; 
+   echo"<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=login')},0);</script>"; 
 
    exit();     
 }
@@ -53,7 +52,7 @@ if (!($verificar->num_rows>0)) {
 
   $_SESSION['usuario_clave']=null;
 
-   echo"<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=login')},0);</script>"; 
+   echo"<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=login')},0);</script>"; 
 
    exit();
 }

@@ -1,2 +1,1 @@
-<script>var url=window.location.href; var dir="http://localhost/facturacion/index.php?pagina=factura"; if(url!=dir){setTimeout(function(){window.location.replace('http://localhost/facturacion/salir.php')},0); /*alert("url"+url+"dir"+dir);*/}</script>
 <input class='pushy__btn pushy__btn--md pushy__btn--green' type='button'  name='boton1'  id='boton1'  onclick='ventana_carrito()' value='ver carrito'>

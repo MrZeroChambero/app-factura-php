@@ -1,4 +1,3 @@
-<script>var url=window.location.href; var dir="http://localhost/facturacion/index.php?pagina=asignar_mercancia"; if(url!=dir){setTimeout(function(){window.location.replace('http://localhost/facturacion/salir.php')},0); /*alert("url"+url+"dir"+dir);*/}</script>
 
 <?php
 require_once($_SERVER['DOCUMENT_ROOT'].'/facturacion/conexion/conexion.php');

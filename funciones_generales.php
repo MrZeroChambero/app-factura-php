@@ -2449,17 +2449,17 @@ return $positivo;
 //redirecciones
 
 function r_factura(){
-	$redirecion="<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=factura')},0);</script>";
+	$redirecion="<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=factura')},0);</script>";
 
 	return $redirecion;
 }
 function cerra_seccion()
 {
-echo "<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/salir.php')},0);</script>";		
+echo "<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/salir.php')},0);</script>";		
 }
 function r_asignar_consumo()
 {
-echo "<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=agregar_consumo')},0);</script>";		
+echo "<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=agregar_consumo')},0);</script>";		
 }
 function r_consultar_proveedor()
 {
@@ -2468,23 +2468,23 @@ echo "<script>setTimeout(function(){window.location.replace('index.php?pagina=co
 
 function r_consulta_factura()
 {
-	echo "<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=consulta_factura')},0);</script>";	
+	echo "<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=consulta_factura')},0);</script>";	
 }
 function r_consulta_compra()
 {
-	echo "<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=consulta_compras')},1500);</script>";
+	echo "<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=consulta_compras')},1500);</script>";
 }
 function r_compra()
 {
-	echo "<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=compras')},0);</script>";
+	echo "<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=compras')},0);</script>";
 }
 function r_asinar_mercancia()
 {
-	echo "<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=asignar_mercancia')},0);</script>";
+	echo "<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=asignar_mercancia')},0);</script>";
 }
 function r_consultar_consumo()
 {
-		echo "<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=consulta_consumo')},0);</script>";
+		echo "<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=consulta_consumo')},0);</script>";
 }
 // procesos
 
@@ -2908,7 +2908,7 @@ function limpiar_lista_compra()
 }
 function limpiar_todo()
 {
-	limpiar_lista_temp();
+	//limpiar_lista_temp();
 
 	limpiar_insumos_temp();
 

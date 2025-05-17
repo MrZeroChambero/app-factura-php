@@ -1,4 +1,3 @@
-<script>var url=window.location.href; var dir="http://localhost/facturacion/index.php?pagina=preguntas"; if(url!=dir){setTimeout(function(){window.location.replace('http://localhost/facturacion/salir.php')},0); /*alert("url"+url+"dir"+dir);*/}</script>
 <?php 
 
 require_once($_SERVER['DOCUMENT_ROOT'].'/facturacion/conexion/conexion.php');
@@ -9,7 +8,7 @@ nivel_maximo();
 
 if (!isset($_SESSION['preguntas'])) {
 
-echo "<script> setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=consulta_usuario')},0);</script>";
+echo "<script> setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=consulta_usuario')},0);</script>";
 
 	exit();	
 }
@@ -19,7 +18,7 @@ $verificar=verificar_usuario_activo($usuario);
 
 if (!($verificar->num_rows>0)) {
 	
-echo "<script> setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=consulta_usuario')},0);</script>";
+echo "<script> setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=consulta_usuario')},0);</script>";
 
 	exit();
 }

@@ -1,4 +1,3 @@
-<script>var url=window.location.href; var dir="http://localhost/facturacion/index.php?pagina=factura"; if(url!=dir){setTimeout(function(){window.location.replace('http://localhost/facturacion/salir.php')},0); /*alert("url"+url+"dir"+dir);*/}</script>
 <?php 
 require_once('../conexion/conexion.php');
 
@@ -949,7 +948,7 @@ $sobre_total*=(-1);
 
 												$_SESSION['cliente']=null;
 
-												echo "<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=consulta_factura')},15000);</script>";
+												echo "<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=consulta_factura')},15000);</script>";
 
 												  exit();
 										 

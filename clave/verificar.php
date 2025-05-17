@@ -1,4 +1,3 @@
-<script>var url=window.location.href; var dir="http://localhost/facturacion/index.php?pagina=recuparar_clave"; if(url!=dir){setTimeout(function(){window.location.replace('http://localhost/facturacion/salir.php')},0); /*alert("url"+url+"dir"+dir);*/}</script>
 
 <?php
 require_once($_SERVER['DOCUMENT_ROOT'].'/facturacion/conexion/conexion.php');
@@ -7,7 +6,7 @@ require_once($_SERVER['DOCUMENT_ROOT'].'/facturacion/funciones_generales.php');
 if (isset($_SESSION['autenticado'])) {
    $_SESSION['usuario_clave']=null;
 
-   echo"<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=login')},0);</script>"; 
+   echo"<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=login')},0);</script>"; 
 
    exit();     
 }
@@ -118,7 +117,7 @@ if ($informe_viejos->num_rows>0) {
         session_unset();
 session_destroy();
 
-echo"<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=login')},3000);</script>";
+echo"<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=login')},3000);</script>";
 
     exit();   
 
@@ -152,7 +151,7 @@ session_destroy();
 
 echo $val;
 
-echo"<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=login')},3000);</script>";
+echo"<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=login')},3000);</script>";
 
     exit();   
 }
@@ -161,7 +160,7 @@ $_SESSION['usuario_clave']=$id_us;
 
 $_SESSION['preguntas']=false;
 
-echo"<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=preguntas_seguridad')},0);</script>";
+echo"<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=preguntas_seguridad')},0);</script>";
 //echo"<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=cambio_clave')},0);</script>";
 
 exit();

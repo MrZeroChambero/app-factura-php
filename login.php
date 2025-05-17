@@ -1,5 +1,4 @@
 
-<script>var url=window.location.href; var dir="http://localhost/facturacion/index.php?pagina=login"; if(url!=dir){setTimeout(function(){window.location.replace('http://localhost/facturacion/salir.php')},0); /*alert("url"+url+"dir___"+dir);*/}</script>
 <?php
 $nrointentos=consultar_intentos_login();
 $cantidad=5;
@@ -42,7 +41,7 @@ $accion="Ha Iniciado sección";
 
         auditoria($registro,$accion,$campo,$codigo);  
 
-                header('Location: ' . base_url() . '/facturacion/index.php?pagina=menu');
+                header('Location: ' . base_url() . ':8080/facturacion/index.php?pagina=menu');
 
                 exit();
             }
@@ -116,7 +115,7 @@ $accion="Ha Iniciado sección";
 
         auditoria($registro,$accion,$campo,$codigo);  
 
-                            header('Location: ' . base_url() . '/facturacion/index.php?pagina=menu');
+                            header('Location: ' . base_url() . ':8080/facturacion/index.php?pagina=menu');
 
                             exit();
                             }

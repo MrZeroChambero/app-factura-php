@@ -1,7 +1,4 @@
 
-<script>var url=window.location.href; var dir="http://localhost/facturacion/index.php?pagina=agregar_consumo"; if(url!=dir){setTimeout(function(){window.location.replace('http://localhost/facturacion/salir.php')},0); /*alert("url"+url+"dir"+dir);*/}</script>
-
-
 <?php 
 require_once('../../conexion/conexion.php');
 require_once('../../funciones_generales.php');

@@ -1,4 +1,3 @@
-<script>var url=window.location.href; var dir="http://localhost/facturacion/index.php?pagina=consulta_usuario"; if(url!=dir){setTimeout(function(){window.location.replace('http://localhost/facturacion/salir.php')},0); /*alert("url"+url+"dir"+dir);*/}</script>
 
 <?php
 require_once($_SERVER['DOCUMENT_ROOT']."/facturacion/conexion/conexion.php");
@@ -13,7 +12,7 @@ $patron_texto_sin_espacios = "/^[0-9a-zA-ZáéíóúñüÁÉÍÓÚÑÜ]+$/";
 
 if (!isset($_SESSION['editar_clave'])) {
 
-  echo "<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=consulta_usuario')},0);</script>";
+  echo "<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=consulta_usuario')},0);</script>";
 
     exit();	
 }
@@ -22,7 +21,7 @@ $verificar=verificar_usuario($_SESSION['editar_clave']);
 
 if ($verificar==false) {
 
-  echo "<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=consulta_usuario')},0);</script>";
+  echo "<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=consulta_usuario')},0);</script>";
 
     exit();		
 }

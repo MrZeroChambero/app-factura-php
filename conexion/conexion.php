@@ -3,7 +3,7 @@
 define('HOSTNAME', 'localhost');
 define('USERNAME', 'root');
 define('PASSWORD', '');
-define('DATABASE', 'facturacion');
+define('DATABASE', 'facturacionphp');
 define('PORT', 3306);
 
 function base_url()

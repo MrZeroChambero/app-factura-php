@@ -1,5 +1,5 @@
 administrador
-usuario:helin
+usuario:heilin
 clave:admin
 
 gerente:

@@ -1,4 +1,5 @@
 <?php
+
 require_once('conexion/conexion.php');
 
 require_once('funciones_generales.php'); 
@@ -13,7 +14,7 @@ if (!isset($_GET['pagina'])) {
 	$pagina=$_GET['pagina'];
 }
 if ($pagina=="") {
-	echo "<script type='text/javascript'>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=login')},0);</script>";
+	echo "<script type='text/javascript'>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=login')},0);</script>";
 	exit();
 }
 if ($pagina=="login") {

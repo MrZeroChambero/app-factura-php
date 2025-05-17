@@ -1,4 +1,3 @@
-<script>var url=window.location.href; var dir="http://localhost/facturacion/index.php?pagina=compras"; if(url!=dir){setTimeout(function(){window.location.replace('http://localhost/facturacion/salir.php')},0); /*alert("url"+url+"dir"+dir);*/}</script>
 <?php 
 require_once('../conexion/conexion.php');
 
@@ -946,7 +945,7 @@ echo $fecha."fecha";*/
                             
                             $_SESSION['proveedor1']= null;
 
-                            echo "<script>setTimeout(function(){window.location.replace('http://localhost/facturacion/index.php?pagina=consulta_compras')},10000);</script>";
+                            echo "<script>setTimeout(function(){window.location.replace('http://localhost:8080/facturacion/index.php?pagina=consulta_compras')},10000);</script>";
                                    
                             exit();
         }else{
